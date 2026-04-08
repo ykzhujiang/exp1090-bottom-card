@@ -1,0 +1,35 @@
+{
+  "project": "exp1090-bottom-card",
+  "created_at": "2026-04-08T18:27:29.153426+00:00",
+  "github_repo": "ykzhujiang/exp1090-bottom-card",
+  "config": {
+    "theme": "一场决定公司命运的收购谈判上，所有人都以为创业者陈锋已经输了——直到他翻出底牌。赌术×商战×逆袭。",
+    "genre": "thriller",
+    "style": "realistic",
+    "duration": 60,
+    "characters": 2,
+    "setting": "中国·当代·都市",
+    "ratio": "9:16",
+    "episode": "1",
+    "source_video": null,
+    "entry": "B"
+  },
+  "status": "not_started",
+  "steps": {
+    "step1b": {
+      "status": "not_started"
+    },
+    "step1.5": {
+      "status": "not_started"
+    },
+    "step3": {
+      "status": "not_started"
+    },
+    "step4": {
+      "status": "not_started"
+    },
+    "step6": {
+      "status": "not_started"
+    }
+  }
+}
