@@ -3,12 +3,12 @@
   "created_at": "2026-04-08T18:27:29.153426+00:00",
   "github_repo": "ykzhujiang/exp1090-bottom-card",
   "config": {
-    "theme": "一场决定公司命运的收购谈判上，所有人都以为创业者陈锋已经输了——直到他翻出底牌。赌术×商战×逆袭。",
+    "theme": "\u4e00\u573a\u51b3\u5b9a\u516c\u53f8\u547d\u8fd0\u7684\u6536\u8d2d\u8c08\u5224\u4e0a\uff0c\u6240\u6709\u4eba\u90fd\u4ee5\u4e3a\u521b\u4e1a\u8005\u9648\u950b\u5df2\u7ecf\u8f93\u4e86\u2014\u2014\u76f4\u5230\u4ed6\u7ffb\u51fa\u5e95\u724c\u3002\u8d4c\u672f\u00d7\u5546\u6218\u00d7\u9006\u88ad\u3002",
     "genre": "thriller",
     "style": "realistic",
     "duration": 60,
     "characters": 2,
-    "setting": "中国·当代·都市",
+    "setting": "\u4e2d\u56fd\u00b7\u5f53\u4ee3\u00b7\u90fd\u5e02",
     "ratio": "9:16",
     "episode": "1",
     "source_video": null,
@@ -20,12 +20,7 @@
       "status": "not_started"
     },
     "step1.5": {
-      "status": "done",
-      "started_at": "2026-04-09T00:46:06.089879+00:00",
-      "completed_at": "2026-04-09T00:46:07.514054+00:00",
-      "output": "production/storyboard/1_storyboard_verdict.json",
-      "character_verdict": "SKIP",
-      "storyboard_verdict": "SKIP"
+      "status": "not_started"
     },
     "step3": {
       "status": "not_started"
