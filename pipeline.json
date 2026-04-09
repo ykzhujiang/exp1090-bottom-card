@@ -14,7 +14,7 @@
     "source_video": null,
     "entry": "B"
   },
-  "status": "step3_in_progress",
+  "status": "step3_done",
   "steps": {
     "step1b": {
       "status": "not_started"
@@ -28,8 +28,11 @@
       "storyboard_verdict": "PASS"
     },
     "step3": {
-      "status": "in_progress",
-      "started_at": "2026-04-09T06:32:19.329142+00:00"
+      "status": "done",
+      "started_at": "2026-04-09T06:29:08.650688+00:00",
+      "completed_at": "2026-04-09T06:32:30.779394+00:00",
+      "output": "assets/asset-map.json",
+      "asset_count": 0
     },
     "step4": {
       "status": "not_started"
