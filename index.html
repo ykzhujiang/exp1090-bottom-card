@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>底牌 — EP01 分镜剧本</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#0a0a0f;color:#e0ddd5;font-family:'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif;line-height:1.7;overflow-x:hidden}
+.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:2rem;background:linear-gradient(180deg,#0a0a0f 0%,#1a1510 50%,#0a0a0f 100%);position:relative}
+.hero::before{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background:radial-gradient(ellipse at 50% 40%,rgba(200,160,80,0.08) 0%,transparent 70%)}
+.hero h1{font-size:3.5rem;font-weight:900;letter-spacing:0.15em;color:#d4a853;text-shadow:0 0 40px rgba(212,168,83,0.3);margin-bottom:0.5rem;position:relative;z-index:1}
+.hero .logline{font-size:1.1rem;color:#9a9080;max-width:500px;margin-top:1rem;position:relative;z-index:1}
+.hero .meta{margin-top:2rem;font-size:0.85rem;color:#6a6050;position:relative;z-index:1}
+.section{max-width:700px;margin:0 auto;padding:2rem 1.5rem}
+.section-title{font-size:1.4rem;color:#d4a853;font-weight:700;margin-bottom:1.5rem;padding-bottom:0.5rem;border-bottom:1px solid rgba(212,168,83,0.2)}
+.characters{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-bottom:3rem}
+@media(max-width:500px){.characters{grid-template-columns:1fr}}
+.char-card{background:#141418;border:1px solid #2a2520;border-radius:12px;overflow:hidden;transition:transform 0.3s}
+.char-card:hover{transform:translateY(-4px)}
+.char-card img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block}
+.char-card .info{padding:1rem}
+.char-card .name{font-size:1.2rem;font-weight:700;color:#d4a853;margin-bottom:0.4rem}
+.char-card .desc{font-size:0.85rem;color:#8a8070;line-height:1.6}
+.scene-card{background:#141418;border:1px solid #2a2520;border-radius:12px;overflow:hidden;margin-bottom:3rem}
+.scene-card img{width:100%;aspect-ratio:16/9;object-fit:cover;display:block}
+.scene-card .info{padding:1rem}
+.scene-card .name{font-size:1.1rem;font-weight:700;color:#8ab4d4;margin-bottom:0.4rem}
+.scene-card .desc{font-size:0.85rem;color:#8a8070;line-height:1.6}
+.segment{margin-bottom:3rem}
+.segment-header{font-size:1.1rem;color:#8ab4d4;margin-bottom:0.5rem;font-weight:600}
+.physical-state{background:#12121a;border-left:3px solid #5a7a9a;padding:1rem 1.2rem;margin-bottom:1.5rem;border-radius:0 8px 8px 0;font-size:0.85rem;color:#8a9ab0}
+.physical-state strong{color:#a0b8d0}
+.part{padding:1.2rem;margin-bottom:0.8rem;border-radius:10px;position:relative;animation:fadeIn 0.5s ease-out}
+@keyframes fadeIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+.part-num{font-size:0.75rem;color:#6a6050;font-weight:700;text-transform:uppercase;margin-bottom:0.4rem;letter-spacing:0.1em}
+.part-action{background:#1a1a20;border-left:3px solid #4a5a6a}
+.part-dialogue{background:#1a1510;border-left:3px solid #d4a853}
+.part-inner{background:#151520;border-left:3px solid #7a5aaa}
+.part .speaker{color:#d4a853;font-weight:600}
+.part .inner-tag{color:#9a7aca;font-weight:600;font-style:italic}
+.part .text{font-size:0.95rem;color:#ccc8c0}
+.camera{background:#0f1a0f;border:1px solid #2a4a2a;border-radius:8px;padding:1rem;margin-top:1.5rem;font-size:0.85rem;color:#7aaa7a}
+.camera strong{color:#8ac88a}
+.hook{background:linear-gradient(135deg,#1a1510,#201a10);border:1px solid rgba(212,168,83,0.3);border-radius:12px;padding:1.5rem;margin:2rem 0;text-align:center}
+.hook h3{color:#d4a853;margin-bottom:0.5rem}
+.hook p{color:#b0a890;font-size:0.95rem}
+.footer{text-align:center;padding:3rem 1rem;color:#4a4030;font-size:0.8rem}
+.badge{display:inline-block;background:rgba(212,168,83,0.15);color:#d4a853;padding:0.2rem 0.7rem;border-radius:20px;font-size:0.75rem;margin:0.2rem}
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <h1>底 牌</h1>
+  <div class="logline">一场决定公司命运的收购谈判上，所有人都以为创业者陈锋已经输了——直到他翻出底牌。</div>
+  <div class="meta">
+    <span class="badge">赌术×商战</span>
+    <span class="badge">逆袭</span>
+    <span class="badge">15秒短剧</span>
+    <span class="badge">S-Format v7.5</span>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title">🎭 角色</div>
+  <div class="characters">
+    <div class="char-card">
+      <img src="assets/陈锋.webp" alt="陈锋" loading="lazy">
+      <div class="info">
+        <div class="name">陈锋</div>
+        <div class="desc">30岁出头，精瘦，眼袋深重，下巴有短胡茬。穿皱巴巴白衬衫，袖口卷到小臂。左手习惯性转硬币——创业者的苦逼与赌徒的冷静并存。</div>
+      </div>
+    </div>
+    <div class="char-card">
+      <img src="assets/赵总.webp" alt="赵总" loading="lazy">
+      <div class="info">
+        <div class="name">赵总</div>
+        <div class="desc">50多岁，圆脸油光，发际线后移但梳得一丝不苟。深色藏蓝西装，金色袖扣。浑身散发资本大佬的掌控感和优越感。</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-title">🏙️ 场景</div>
+  <div class="scene-card">
+    <img src="assets/会议室-夜.webp" alt="会议室-夜" loading="lazy">
+    <div class="info">
+      <div class="name">会议室 · 夜</div>
+      <div class="desc">20层高档写字楼，黑色长桌，深灰高背皮椅。落地窗外是深夜城市霓虹。天花板冷白射灯与窗外暖黄灯光交织，戏剧性明暗对比。</div>
+    </div>
+  </div>
+
+  <div class="section-title">🎬 Segment 01 — ≤15s</div>
+  <div class="segment">
+    <div class="physical-state">
+      <strong>Physical State</strong><br>
+      <strong>[陈锋]</strong> 画面左侧，坐姿前倾，左手在桌面下转硬币，右手搭在合同上，视线低垂看向桌面合同。穿皱巴巴白衬衫。<br>
+      <strong>[赵总]</strong> 画面右侧，坐姿后仰，双手交叉放腹部，视线斜看向陈锋，嘴角带笑。穿藏蓝西装，金色袖扣。
+    </div>
+
+    <div class="part part-dialogue">
+      <div class="part-num">Part 1</div>
+      <div class="text"><span class="speaker">[赵总]</span> 右手食指敲了敲黑色桌面，视线从桌上合同缓缓移到陈锋脸上，嘴角上扬露出得意笑容，轻声说：<strong>"怎么，还没想好？"</strong></div>
+    </div>
+
+    <div class="part part-dialogue">
+      <div class="part-num">Part 2</div>
+      <div class="text"><span class="speaker">[赵总]</span> 身体微微前倾，右手五指张开按在合同上，眉毛挑起，嘴唇微动说：<strong>"陈锋啊，三千万收你的公司，够意思了吧——你那服务器还能撑几天？"</strong></div>
+    </div>
+
+    <div class="part part-action">
+      <div class="part-num">Part 3</div>
+      <div class="text"><span class="speaker">[陈锋]</span> 左手停止转硬币，指尖将硬币立在桌面上不动，缓缓抬头，眼睛微眯，视线穿过桌面直视赵总，嘴角几不可见地上扬。</div>
+    </div>
+
+    <div class="part part-inner">
+      <div class="part-num">Part 4 · 内心独白</div>
+      <div class="text"><span class="inner-tag">[陈锋 · 内心]</span> <strong>"他不知道我昨晚拿到了他们数据造假的证据——三千万？呵，不够付律师费的。"</strong></div>
+    </div>
+
+    <div class="part part-dialogue">
+      <div class="part-num">Part 5</div>
+      <div class="text"><span class="speaker">[陈锋]</span> 说：<strong>"赵总，我给您看个东西。"</strong> 左手从裤子口袋掏出一个黑色U盘放在桌面上，食指一推，U盘沿着光滑桌面缓缓滑向赵总方向。</div>
+    </div>
+
+    <div class="part part-dialogue">
+      <div class="part-num">Part 6</div>
+      <div class="text"><span class="speaker">[赵总]</span> 笑容僵在脸上，瞳孔微缩，身体从后仰猛地变为前倾，双手撑住桌沿，视线锁定那枚黑色U盘，低声说：<strong>"你……这是什么？"</strong></div>
+    </div>
+
+    <div class="camera">
+      <strong>🎥 运镜</strong>：中景开场 → 缓慢推向陈锋手部特写推U盘 → 中景拉回赵总反应 | 平视 | 正常速度
+    </div>
+  </div>
+
+  <div class="hook">
+    <h3>🔥 悬念钩子</h3>
+    <p>U盘里到底是什么？赵总会如何反应？陈锋能逆转这场收购谈判吗？</p>
+  </div>
+
+  <div class="section-title">📋 技术规格</div>
+  <div class="physical-state" style="border-left-color:#5a6a4a">
+    <strong>Format</strong>: S-Format v7.5<br>
+    <strong>Duration</strong>: ≤15s / 1 Segment / 6 Parts<br>
+    <strong>Style</strong>: Realistic / Cinematic thriller<br>
+    <strong>台词密度</strong>: 5/6 Parts (83%) ✅ ≥80%<br>
+    <strong>Physical State</strong>: ✅ 全角色姿态声明<br>
+    <strong>180度法则</strong>: ✅ 陈锋始终左侧，赵总始终右侧
+  </div>
+</div>
+
+<div class="footer">
+  EXP-1090 · 底牌 EP01 · Trinity V3 · V6.1 Storyboard<br>
+  Generated by Operator Agent · CYCLE-operator-827
+</div>
+
+</body>
+</html>
