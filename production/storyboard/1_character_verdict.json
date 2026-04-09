@@ -1,0 +1,48 @@
+{
+  "checked_at": "2026-04-09T00:48:33.095436+00:00",
+  "verdict": "PASS",
+  "storyboard": "storyboard.md",
+  "setting": "中国·当代·都市",
+  "characters": {
+    "陈锋": {
+      "completeness": {
+        "pass": true,
+        "missing": []
+      },
+      "image_friendliness": {
+        "pass": true,
+        "vague_terms": []
+      },
+      "setting_consistency": {
+        "pass": true,
+        "note": "Character has East Asian features consistent with setting"
+      },
+      "differentiation": {
+        "pass": true,
+        "similar_to": null
+      }
+    },
+    "赵总": {
+      "completeness": {
+        "pass": true,
+        "missing": []
+      },
+      "image_friendliness": {
+        "pass": true,
+        "vague_terms": []
+      },
+      "setting_consistency": {
+        "pass": true,
+        "note": "Character has East Asian features consistent with setting"
+      },
+      "differentiation": {
+        "pass": true,
+        "similar_to": null
+      }
+    }
+  },
+  "hard_fails": 0,
+  "soft_warnings": 0,
+  "auto_fixed": true,
+  "fix_rounds": 1
+}

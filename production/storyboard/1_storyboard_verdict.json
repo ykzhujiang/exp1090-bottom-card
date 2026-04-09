@@ -1,6 +1,8 @@
 {
-  "checked_at": "2026-04-09T00:46:07.513763+00:00",
-  "verdict": "SKIP",
-  "reason": "check_storyboard.py not available",
-  "storyboard": "storyboard.md"
+  "checked_at": "2026-04-09T00:48:33.220238+00:00",
+  "verdict": "PASS",
+  "total_pairs": 0,
+  "failures": [],
+  "cross_episode_check": null,
+  "auto_fix_rounds": 0
 }
