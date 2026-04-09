@@ -11,7 +11,7 @@
       "description_match": 4,
       "quality_ok": true,
       "issues": [
-        "描述要求左手拿硬币，但图像中人物使用的是右手"
+        "描述要求'左手'转动硬币，但图像中人物使用的是右手。"
       ],
       "retry_suggestion": null
     },
